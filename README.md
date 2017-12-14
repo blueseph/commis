@@ -2,6 +2,8 @@
 
 [Commis](https://en.wiktionary.org/wiki/commis) is a testing suite for Mise that makes it easy to test Mise components. Commis properly sets up your environment to handle components and simplify renders.
 
+We strongly suggest using Commis with [Jest](https://www.npmjs.com/package/jest).
+
 #### Installation
 ```
 npm i --save-dev @mise/test
@@ -41,7 +43,8 @@ describe('component test', () => {
   it('should render after an action', async () => {
     document.querySelector('button').click();
 
-    await render();
+    /* optionally, render takes in a millisecond parameter to wait for a render to occur */
+    await render(100);
     
     expect(document.querySelector('span').textContent).toEqual('success');
   });
