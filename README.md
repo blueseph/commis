@@ -45,7 +45,6 @@ describe('component test', () => {
 
     /* optionally, render takes in a millisecond parameter to wait for a render to occur */
     await render(100);
-    
     expect(document.querySelector('span').textContent).toEqual('success');
   });
 })
