@@ -2,7 +2,7 @@
   "name": "@mise/test",
   "version": "1.0.1",
   "description": "testing suite for mise",
-  "main": "commis.js",
+  "main": "dist/commis.js",
   "author": "dan b",
   "license": "MIT",
   "devDependencies": {
